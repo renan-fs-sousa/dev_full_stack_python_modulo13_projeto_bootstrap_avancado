@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b3035;
+}
+
+.navbar {
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background-color: black;
+    font-size: 1em;
+    text-align: center;
+}
+
+.nav-pills .nav-link {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+}
+
+header img {
+    height: 45px;
+    max-width: 100%;
+}
+
+#conteudo {
+    margin-top: -70px;
+}
+
+section {
+    padding-top: 70px;
+}
+
+section h2 {
+    color: #fff;
+    margin: 32px 0 0 0;
+    padding-bottom: 8px;
+    border-bottom: #414141 solid 3px;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.carousel-item > img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-header > h1,
+.card-text {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.card-body > h3 {
+    font-size: 1.8em;
+}
+
+.card {
+    background: url(./images/papiro.jpg);
+    background-size: cover;
+}
+
+.badge {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.opacidade {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+footer {
+    margin-top: 24px;
+    color: #fff;
+}

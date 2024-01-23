@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Bootstrap Avançado</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header id="cabecalho">
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img src="./images/logo-one.png">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#arcos">Arcos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recompensas">Recompensas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" id="conteudo">
+        <section class="container" id="arcos">
+            <h2>Arcos:</h2>
+            <div class="pt-4">
+                <div class="row">
+                    <div class="col">
+                        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="./images/egghead.webp" class="d-block w-100" alt="EGGHEAD">
+                                    <div class="carousel-caption opacidade">
+                                        <h5>EGGHEAD</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="./images/peixe.webp" class="d-block w-100" alt="ILHA DOS HOMENS PEIXE">
+                                    <div class="carousel-caption opacidade">
+                                        <h5>ILHA DOS HOMENS PEIXE
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="./images/wano.jpg" class="d-block w-100" alt="WANO">
+                                    <div class="carousel-caption opacidade">
+                                        <h5>WANO</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon p-5" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon p-5" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="recompensas">
+            <h2>Recompensas:</h2>
+            <div id="cards" class="pt-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/luffy.jpg" class="card-img-top p-2" alt="100x100">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">DEAD OR ALIVE</h5>
+                            <h3 class="card-text">MONKEY•D•LUFFY</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 3.000.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/zoro.jpg" class="card-img-top  p-2" alt="100x100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">RORONOA ZORO</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 1.111.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/nami.jpg" class="card-img-top  p-2" alt="100x100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">NAMI</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 366.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/usopp.jpg" class="card-img-top  p-2" alt="100x100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">GOD USOPP</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 500.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/sanji.jpg" class="card-img-top  p-2" alt="100x100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">VINSMOKE SANJI</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 1.032.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/chopper.jpg" class="card-img-top  p-2" alt="100x100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">CHOPPER</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 1000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/nico.jpg" class="card-img-top  p-2" alt="Nico Robin">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">NICO ROBIN</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 930.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/franky.jpg" class="card-img-top  p-2" alt="Franky">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">FRANKY</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 394.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/brook.jpg" class="card-img-top  p-2" alt="Brook">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">SOUL KING</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 383.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pb-4">
+                        <div class="card rounded-0">
+                            <div class="card-header text-center rounded-0">
+                                <h1 class="m-0">WANTED</h1>
+                            </div>
+                            <img src="./images/jinbe.jpg" class="card-img-top  p-2" alt="Jinbe">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">DEAD OR ALIVE</h5>
+                                <h3 class="card-text">JINBE</h3>
+                            <a href="#" class="badge text-bg-dark">฿ 1.100.000.000</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="bg-dark text-center p-3">
+            <p class="m-0">
+                &copy; One Piece - Todos os direitos reservados - 2024
+            </p>
+        </div>
+    </footer>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
